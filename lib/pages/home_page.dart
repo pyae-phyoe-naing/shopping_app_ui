@@ -34,17 +34,17 @@ class HomePage extends StatelessWidget {
                   child: Row(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 5),
+                        margin: const EdgeInsets.only(left: 5),
                         height: 50,
                         width: 300,
                         child: TextFormField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                               border: InputBorder.none,
                               hintText: 'Search here...'),
                         ),
                       ),
                       Spacer(),
-                      Icon(
+                      const Icon(
                         Icons.camera_alt,
                         size: 27,
                         color: Color(0xFF4C53A5),
