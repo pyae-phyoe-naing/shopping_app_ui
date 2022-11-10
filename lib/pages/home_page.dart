@@ -39,14 +39,30 @@ class HomePage extends StatelessWidget {
                         width: 300,
                         child: TextFormField(
                           decoration: InputDecoration(
-                              border: InputBorder.none, hintText: 'Search here...'),
+                              border: InputBorder.none,
+                              hintText: 'Search here...'),
                         ),
                       ),
                       Spacer(),
-                      Icon(Icons.camera_alt,size: 27, color: Color(0xFF4C53A5),)
+                      Icon(
+                        Icons.camera_alt,
+                        size: 27,
+                        color: Color(0xFF4C53A5),
+                      )
                     ],
                   ),
-                )
+                ),
+                // -------- Category ----- //
+                // -------- Category Title ----- //
+                Container(
+                  alignment: Alignment.centerLeft,
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                  child: const Text('Categories',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,
+                  color:Color(0xFF4C53A5)),),
+                ),
+                // -------- Category List ----- //
+
               ],
             ),
           )
