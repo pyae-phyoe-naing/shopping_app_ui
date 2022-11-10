@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widget/categories_item_widget.dart';
 import '../widget/home_app_bar.dart';
 
 class HomePage extends StatelessWidget {
@@ -23,6 +24,7 @@ class HomePage extends StatelessWidget {
             ),
             child: Column(
               children: [
+                // --------- Search Area ------//
                 Container(
                   height: 50,
                   margin: const EdgeInsets.symmetric(horizontal: 15),
@@ -43,7 +45,7 @@ class HomePage extends StatelessWidget {
                               hintText: 'Search here...'),
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       const Icon(
                         Icons.camera_alt,
                         size: 27,
@@ -62,7 +64,8 @@ class HomePage extends StatelessWidget {
                   color:Color(0xFF4C53A5)),),
                 ),
                 // -------- Category List ----- //
-
+                 const CategoriesItemWidget(),
+                // -------- Product Item List ----- //
               ],
             ),
           )
