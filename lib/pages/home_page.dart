@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../widget/categories_item_widget.dart';
 import '../widget/home_app_bar.dart';
+import '../widget/products_item_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class HomePage extends StatelessWidget {
         children: [
           const HomeAppBar(),
           Container(
-            height: 500, // tempory height
+            // height: 500, // tempory height
             padding: const EdgeInsets.only(top: 15),
             decoration: const BoxDecoration(
               color: Color(0xFFEDECF2),
@@ -65,7 +66,14 @@ class HomePage extends StatelessWidget {
                 ),
                 // -------- Category List ----- //
                  const CategoriesItemWidget(),
+                // -------- Product Title ----- //
+                Container(
+                  alignment: Alignment.centerLeft,
+                  margin: const EdgeInsets.symmetric(vertical: 20,horizontal: 10),
+                  child: const Text('All Products',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color:Color(0xFF4C53A5), ),),
+                ),
                 // -------- Product Item List ----- //
+               const ProductsItemWidget()
               ],
             ),
           )
