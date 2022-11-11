@@ -45,7 +45,9 @@ class ProductsItemWidget extends StatelessWidget {
                 ],
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed('/product_detail_page');
+                },
                 child: Container(
                   margin: const EdgeInsets.all(10),
                   child: Image.asset(
