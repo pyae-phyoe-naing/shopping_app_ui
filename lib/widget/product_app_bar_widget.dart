@@ -12,7 +12,7 @@ class _ProductAppBarWidgetState extends State<ProductAppBarWidget> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      padding: const EdgeInsets.all(25),
+      padding: const EdgeInsets.all(20),
       child: Row(
         children: [
           InkWell(
