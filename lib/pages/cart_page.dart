@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopping_ap_ui/widget/cart_app_bar.dart';
 
 import '../widget/cart_item_widget.dart';
+import '../widget/cart_page_botton_nav.dart';
 
 class CartPage extends StatefulWidget {
   const CartPage({Key? key}) : super(key: key);
@@ -67,6 +68,7 @@ class _CartPageState extends State<CartPage> {
           ),
         ],
       ),
+      bottomNavigationBar: const CartPageBottonNav(),
     );
   }
 }
